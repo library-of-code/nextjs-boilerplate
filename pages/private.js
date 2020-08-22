@@ -1,10 +1,7 @@
 import { useSession } from 'next-auth/client'
+import Layout from '../components/layout/Layout'
 
-export default () => {
-  const [ session, loading ] = useSession()
-
-  return <>
-    {session && <p>Signed in as {session.user.name}</p>}
-    {!session && <p><a href="/api/auth/signin">Sign in</a></p>}
-  </>
-}
+export default () => 
+    <Layout protected>
+        <div>This is a protected route</div>
+    </Layout>
