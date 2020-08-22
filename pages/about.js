@@ -1,10 +1,10 @@
 import Layout from "../components/layout/Layout";
 
-const index = () =>
+const about = () =>
     <Layout>
         <div>
-            Index
+            About
         </div>
     </Layout>
 
-export default index
+export default about
