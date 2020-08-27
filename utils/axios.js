@@ -1,7 +1,8 @@
 import Axios from 'axios'
+import backend from '../constants/backend';
 
 var axios = Axios.create({
-    baseURL: 'http://localhost:1337/',
+    baseURL: backend,
     timeout: 1000,
 });
 
