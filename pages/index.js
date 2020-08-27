@@ -1,10 +1,18 @@
 import Layout from "../components/layout/Layout";
+import BlogItem from "../components/blogItem/BlogItem";
+import useSWR from "swr";
 
-const index = () =>
-    <Layout>
+const index = () => {
+
+    const { data, error } = useSWR('/api/blogs')
+
+    if (error) return <h1>Something went very wrong!</h1>
+
+    return(<Layout>
         <div>
-            Index
+            {data && data.map(item => <BlogItem {...item}/>)}
         </div>
-    </Layout>
+    </Layout>)
+}
 
 export default index
