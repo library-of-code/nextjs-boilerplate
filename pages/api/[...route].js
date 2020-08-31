@@ -15,5 +15,6 @@ export default async (req, res) => {
     data: body
   })
 
+  console.log(response.data)
   res.send(response.data)
 }
