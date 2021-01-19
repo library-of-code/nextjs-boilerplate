@@ -1,6 +1,8 @@
 ## Overview
 This is a **next-js starter boilerplate** to help you get started with NextJS quickly. It can be used as a static site generator or can also be served live from a server.
 
+<img src="screenshots/1.png" width="560" height="500" />
+
 It comes prebuilt with:
 - OAuth Authentication
 - Ant Design
