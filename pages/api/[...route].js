@@ -1,6 +1,6 @@
 import axios from '../../utils/axios'
 
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+// A function to forward API calls from the client via the server.
 export default async (req, res) => {
 
   const {
@@ -15,6 +15,6 @@ export default async (req, res) => {
     data: body
   })
 
-  console.log(response.data)
+  // console.log(response.data)
   res.send(response.data)
 }
