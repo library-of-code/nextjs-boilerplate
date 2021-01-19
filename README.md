@@ -1,30 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Overview
+This is a **next-js starter boilerplate** to help you get started with NextJS quickly. It can be used as a static site generator or can also be served live from a server.
+
+It comes prebuilt with:
+- OAuth Authentication
+- Ant Design
+- Tabbed Layout
 
 ## Getting Started
+- Git clone this repo or use it as template.
+- Install the components using `yarn install` or `npm install`
+- Run the server using `yarn dev` or `next run dev`
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-First, run the development server:
+## Folders
+- **constants**: This folder contains the constant values to be used throughout the app. _e.g. link to CMS_
+- **components**: This folder contains individual components that you design in React to be used in the app.
+- **pages**: This folder contains all the pages in your website.
+- **styles**: This contains the global styles to be used throughout the app. _e.g. Antd.less contains css prefs pertaining to Ant Design._
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Some important points
+- You can remove **ant design** from the project by simply removing its import statement in **pages/_app.js**
+- You can use **OAuth** by configuring your _providers_ in **api/auth/[...nextauth.js]** (Only for non-static sites).
+- Yout can change the **components/layout/Layout.jsx** file to change the tabbed layout of the site
+- You can make a component private so that only authenticated users can see it by using the `<Layout protected>` tag with it.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contribute
+Contribute to this project by:
+- Opening an **issue** requesting for a new feature or bug fix.
+- Sending a **pull request** with your additions.
